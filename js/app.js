@@ -33,11 +33,41 @@ function robotChoose() {
 
 function checkWinner(user, robot) {
   const rules = {
-    paper: { rock: "USER", scissors: "ROBOT", paper: "TIE", scop: "USER", lizard: "ROBOT" },
-    scissors: { paper: "USER", rock: "ROBOT", scissors: "TIE", lizard: "USER", scop: "ROBOT" },
-    rock: { scissors: "USER", paper: "ROBOT", rock: "TIE", lizard: "USER", scop: "ROBOT" },
-    scop: { scissors: "USER", rock: "USER", paper: "ROBOT", lizard: "ROBOT", scop: "TIE" },
-    lizard: { paper: "USER", scop: "USER", rock: "ROBOT", scissors: "ROBOT", lizard: "TIE" },
+    paper: { 
+      rock: "USER", 
+      scissors: "ROBOT", 
+      paper: "TIE", 
+      scop: "USER", 
+      lizard: "ROBOT" 
+    },
+    scissors: { 
+      paper: "USER", 
+      rock: "ROBOT", 
+      scissors: "TIE", 
+      lizard: "USER", 
+      scop: "ROBOT" 
+    },
+    rock: { 
+      scissors: "USER", 
+      paper: "ROBOT", 
+      rock: "TIE", 
+      lizard: "USER", 
+      scop: "ROBOT" 
+    },
+    scop: { 
+      scissors: "USER", 
+      rock: "USER", 
+      paper: "ROBOT", 
+      lizard: "ROBOT", 
+      scop: "TIE" 
+    },
+    lizard: { 
+      paper: "USER", 
+      scop: "USER", 
+      rock: "ROBOT", 
+      scissors: "ROBOT", 
+      lizard: "TIE" 
+    },
   };
   return rules[user][robot];
 }
